@@ -29,6 +29,9 @@
       box-sizing: border-box;
       padding: 10px;
       gap: 10px;
+
+      background: url('imatges/CopDeGas2.png') no-repeat center center;
+      background-size:cover;
     }
 
     .container {
@@ -38,13 +41,10 @@
       grid-template-rows: repeat(4, 1fr);
       gap: 10px;
       box-sizing: border-box;
-
-      background: url('imatges/CopDeGas2.png') no-repeat center center;
-      background-size:cover;
     }
 
     .button {
-      background-color: rgba(20, 20, 20, 0.7);
+      background-color: rgba(20, 20, 20, 0.8);
       border: none;
       color: white;
       font-size: 1rem;
@@ -68,7 +68,7 @@
     }
 
     .button:hover {
-      background-color: rgba(30, 30, 30, 0.9);
+      background-color: rgba(30, 30, 30, 0.95);
     }
 
     .summary {
@@ -92,6 +92,8 @@
       display: flex;
       flex-direction: column;
       gap: 5px;
+      font-size: 1.44rem;
+      
     }
 
     .pressed-item {
@@ -176,22 +178,22 @@
 
   <script>
     const buttonsData = [
-      {name: 'ENTREPÀ CALENT', value: 4, image: 'imatges/botifarra.jpg'},
-      {name: 'ENTREPÀ FRED', value: 4, image: 'imatges/llom.jpg'},
-      {name: 'SUPLEMENT FORMATGE', value: 1, image: 'imatges/formatge.jpg'},
-      {name: 'GOT', value: 1, image: 'imatges/CopDeGas.jpg'},
-      {name: 'BIRRA', value: 2, image: 'imatges/birra.jpg'},
+      {name: 'ENTREPÀ CALENT', value: 4.5, image: 'imatges/entrepaCalent.jpg'},
+      {name: 'ENTREPÀ FRED', value: 4, image: 'imatges/entrepaFred.jpg'},
+      {name: 'SUPLEMENT FORMATGE', value: 0.5, image: 'imatges/formatge.jpg'},
+      {name: 'GOT', value: 1, image: 'imatges/got.jpg'},
+      {name: 'BIRRA', value: 2.5, image: 'imatges/birra.jpg'},
       {name: 'COMBINAT', value: 5, image: 'imatges/combinat.jpg'},
       {name: 'XARRUP', value: 2, image: 'imatges/xarrup.jpg'},
-      {name: 'AIGUA', value: 1.5, image: 'imatges/aigua.jpg'},
-      {name: 'REFRESC', value: 2, image: 'imatges/refresc.jpg'},
+      {name: 'AIGUA', value: 1, image: 'imatges/aigua.jpg'},
+      {name: 'REFRESC', value: 2.5, image: 'imatges/refresc.jpg'},
       {name: 'COMBINAT ENERGÈTIC', value: 6, image: 'imatges/energetic.jpg'},
       {name: 'GASOLINA', value: 3, image: 'imatges/gasolina.jpg'},
-      {name: 'CopDeGas', value: 0, image: 'imatges/CopDeGas.jpg'},
+      {name: 'RATAFIA', value: 3.5, image: 'imatges/ratafia.jpg'},
       {name: 'FINGERS', value: 4, image: 'imatges/fingers.jpg'},
       {name: 'PATATES BRAVES', value: 4, image: 'imatges/patatesBraves.jpg'},
-      {name: 'CopDeGas', value: 0, image: 'imatges/CopDeGas.jpg'},
-      {name: 'CopDeGas', value: 0, image: 'imatges/CopDeGas.jpg'}
+      //{name: '-', value: 0, image: 'imatges/CopDeGas.jpg'},
+      //{name: '-', value: 0, image: 'imatges/CopDeGas.jpg'}
     ];
 
     const buttonGrid = document.getElementById('buttonGrid');
